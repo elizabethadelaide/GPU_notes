@@ -1,0 +1,82 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "100/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+results
+{
+    forceCoeffs1
+    {
+        scalar
+        {
+            Cm              5.40203236519461;
+            Cd              2.646659533789866;
+            Cl              -0.1291145287569135;
+            Cl(f)           5.337475100816153;
+            Cl(r)           -5.466589629573066;
+        }
+    }
+}
+
+streamLines
+{
+    p
+    {
+        file            "/home/ofuser/workingDir/motorBike/processor0/../postProcessing/sets/streamLines/100/track0_p_k.vtk";
+    }
+    k
+    {
+        file            "/home/ofuser/workingDir/motorBike/processor0/../postProcessing/sets/streamLines/100/track0_p_k.vtk";
+    }
+    U
+    {
+        file            "/home/ofuser/workingDir/motorBike/processor0/../postProcessing/sets/streamLines/100/track0_U.vtk";
+    }
+}
+
+wallBoundedStreamLines
+{
+    p
+    {
+        file            "/home/ofuser/workingDir/motorBike/processor0/../postProcessing/sets/wallBoundedStreamLines/100/track0_p_k.vtk";
+    }
+    k
+    {
+        file            "/home/ofuser/workingDir/motorBike/processor0/../postProcessing/sets/wallBoundedStreamLines/100/track0_p_k.vtk";
+    }
+    U
+    {
+        file            "/home/ofuser/workingDir/motorBike/processor0/../postProcessing/sets/wallBoundedStreamLines/100/track0_U_UNear.vtk";
+    }
+    UNear
+    {
+        file            "/home/ofuser/workingDir/motorBike/processor0/../postProcessing/sets/wallBoundedStreamLines/100/track0_U_UNear.vtk";
+    }
+}
+
+cuttingPlane
+{
+    p
+    {
+        file            "/home/ofuser/workingDir/motorBike/postProcessing/cuttingPlane/100/p_yNormal.vtk";
+    }
+    U
+    {
+        file            "/home/ofuser/workingDir/motorBike/postProcessing/cuttingPlane/100/U_yNormal.vtk";
+    }
+}
+
+
+// ************************************************************************* //
